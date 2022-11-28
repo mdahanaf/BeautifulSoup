@@ -44,4 +44,8 @@ href = soup.find('a')['href']
 flex = soup.find_all(class_='flex')
 # print(flex)
 
+# get the text from the element with particular class
+text_sm = soup.find('button', class_='text-sm')
+# print(text_sm.text)
+
 

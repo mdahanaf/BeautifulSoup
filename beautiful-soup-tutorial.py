@@ -48,4 +48,9 @@ flex = soup.find_all(class_='flex')
 text_sm = soup.find('button', class_='text-sm')
 # print(text_sm.text)
 
+#get all links from anchro tag
+ll = soup.find_all('a')
+for x in ll:
+    ii = "https://www.codewithharry.com"
+    # print(ii+x.get('href'))
 

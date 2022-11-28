@@ -44,8 +44,4 @@ href = soup.find('a')['href']
 flex = soup.find_all(class_='flex')
 # print(flex)
 
-test = soup.find_all('div', class_='title-font text-lg font-medium text-gray-900 dark:text-white mb-3')
-print(test)
-
-
 

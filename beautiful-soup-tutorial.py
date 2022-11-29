@@ -12,7 +12,7 @@ r = requests.get(url)
 htmlContent = r.content
 
 # creating html Tree structure(soup), using html.parser
-soup = BeautifulSoup(htmlContent, 'html.parser')
+soup = BeautifulSoup(htmlContent, "html.parser")
 
 # printing the title of the targeted webpage
 title = soup.title
@@ -53,4 +53,6 @@ ll = soup.find_all('a')
 for x in ll:
     ii = "https://www.codewithharry.com"
     # print(ii+x.get('href'))
+
+print(soup.p)
 

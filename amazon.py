@@ -9,25 +9,9 @@ def list_printer(name: list):
     for i in range(0, len(name)):
         print(name[i].text)
 
-
-def result():
-    
-    ll: list = []
-    
-    for i in range(1, len()+1):
-        url = f'https://www.ultratech.com.bd/ram?page={i}'
-        response = requests.get(url, headers=HEADERS)
-        soup = BeautifulSoup(response.content, 'html.parser')
-        title = soup.find_all('div', 'name')
-        ll.append(title[i].text)
+url = 'https://www.amazon.com/s?k=macbook+air'
+r = requests.get(url, headers=HEADERS)
+print(r)
 
 
 
-
-
-
-
-
-
-
-list_printer(title)
